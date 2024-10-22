@@ -19,7 +19,7 @@ jobs:
       AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
 
   demo:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: oidc
 
     steps:
